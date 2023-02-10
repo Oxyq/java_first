@@ -3,12 +3,17 @@ package gen.oxy;
 public class HelloWorld {
 
     public static void main(String[] args) {
-        String helloWorldString = "мир";
+        String helloWorldString = "мира";
 
         if (helloWorldString != null
                 && helloWorldString.length() == 3) {
             System.out.println("Строка из 3х символов: "+ helloWorldString);
         }
+        else if (helloWorldString ==null){
+
+            System.out.println("Строка пустая");
+        }
+
         else {
             System.out.println("Не сработало, потому что длина слова: "+ helloWorldString + " " + helloWorldString.length());
         }
